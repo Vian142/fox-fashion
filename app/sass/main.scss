@@ -5,6 +5,29 @@ img {
   width: 100%;
 }
 
+
+.wave-line{
+  &:after{
+    content: '';
+    display: block;
+    margin: 20px 0;
+    background-image: url('../img/wave-line.svg');
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 28px;
+  }
+}
+.center-line{
+  &:after{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.interim-block{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 /* top header */
 @import 'parts/top-bar';
 
@@ -19,4 +42,15 @@ img {
 
 @import "parts/section-brand";
 
+
+@import "parts/section-middle";
+@import "parts/section-bottom";
+
+
 @import "parts/news-article";
+
+/* main footer */
+@import 'parts/footer'
+
+
+;

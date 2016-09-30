@@ -1,15 +1,55 @@
 /* !!! */
-.section-quote,
-.section-chapters {
+.section-quote {
   display: none;
 }
 
+.section-news{
+  padding: 25px 0 40px;
+}
+
+/* top section */
+.news-container {
+  &__main-title {
+    &__title {
+      font-size: 62px;
+      font-family: "FuturaPT", sans-serif;
+      color: rgb(32, 33, 33);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.5;
+      text-align: center;
+    }
+    &__title-descr {
+      font-size: 52px;
+      font-family: "Merriweather", sans-serif;
+      color: rgb(32, 33, 33);
+      font-weight: bold;
+      line-height: 1;
+      text-align: center;
+    }
+  }
+  &__description {
+    max-width: 830px;
+    padding: 15px 5px 5px;
+    margin: 10px auto;
+
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(156, 156, 156);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2;
+    text-align: center;
+  }
+}
+
+/* news blocks article*/
 .article-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 15px auto 0;
   &__item {
     flex: 1 1 33%;
     max-width: 360px;
@@ -73,10 +113,10 @@
           z-index: 10;
         }
         &:focus,
-        &:hover{
+        &:hover {
           &:before,
           &:after,
-          .article-list__item__thubnail-block__link__view-text{
+          .article-list__item__thubnail-block__link__view-text {
             opacity: 1;
           }
         }
@@ -112,3 +152,32 @@
     }
   }
 }
+
+.news__btn-wrap {
+  text-align: center;
+  padding: 15px 0 5px;
+}
+
+.btn-article-more {
+  display: inline-block;
+  padding: 16px 36px;
+  background: transparent;
+  border: 2px solid #000;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(26, 28, 39);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:focus,
+  &:hover{
+    cursor: pointer;
+    color: #fff;
+    background: #000;
+  }
+}
+

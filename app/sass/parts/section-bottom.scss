@@ -1,0 +1,69 @@
+.section-chapter3 {
+  min-height: 100vh;
+  background-color: #eff0f2;
+  background: url('../img/section/photo2.png'), linear-gradient(to right, #eff0f2 0%, #eff0f2 100%);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+
+  display: flex;
+}
+
+.chapters-bottom {
+  max-width: 450px;
+  margin: auto auto auto 10%;
+
+  &__title {
+    font-size: 72px;
+    font-family: "FuturaPT", sans-serif;
+    color: rgb(32, 33, 33);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: left;
+  }
+  &__chapter-block {
+    font-size: 32px;
+    font-family: "Merriweather", sans-serif;
+    color: rgb(32, 33, 33);
+    font-weight: bold;
+    line-height: 1;
+    text-align: left;
+  }
+  &__text {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(132, 132, 132);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.143;
+    text-align: left;
+  }
+  &__btn-wrap {
+    padding: 10px 0 5px;
+  }
+}
+
+.chapter-btn {
+  display: inline-block;
+  padding: 20px 40px;
+
+  background-color: rgb(32, 33, 33);
+  border: 2px solid rgb(32, 33, 33);
+  box-sizing: border-box;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.462;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:focus,
+  &:hover{
+    color: rgb(32, 33, 33);
+    background: transparent;
+  }
+}
