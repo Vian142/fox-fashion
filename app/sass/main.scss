@@ -1,5 +1,22 @@
 @import 'parts/fonts.scss';
 
+img {
+  max-width: 100%;
+  width: 100%;
+}
 
-/* top header __ main header */
-@import 'parts/header.scss';
+/* top header */
+@import 'parts/top-bar';
+
+/* main-header */
+@import 'parts/header';
+
+/* teach section */
+@import 'parts/teach';
+
+/* content style__ chapter*/
+@import 'parts/content';
+
+@import "parts/section-brand";
+
+@import "parts/news-article";
