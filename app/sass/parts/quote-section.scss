@@ -1,0 +1,49 @@
+.section-quote {
+  padding: 10px 0 40px;
+  &__title-container {
+    padding: 20px 0 40px;
+  }
+}
+
+.quote-icon-block {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: #92cdcf;
+  text-align: center;
+  transform: rotate(180deg);
+  &__icon {
+    font-size: 38px;
+    color: #fff;
+    line-height: 60px;
+  }
+}
+
+.quote-container {
+  position: relative;
+  &__item {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 2%;
+    &__quote-text {
+      font-size: 1.28rem;
+      font-family: "Merriweather", sans-serif;
+      color: rgb(167, 167, 167);
+      font-weight: bold;
+      font-style: italic;
+      line-height: 1.5;
+      text-align: center;
+    }
+    &__quote-author {
+      font-size: 1.142rem;
+      font-family: "Montserrat", sans-serif;
+      color: rgb(34, 37, 51);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 3.125;
+      text-align: center;
+
+    }
+  }
+}

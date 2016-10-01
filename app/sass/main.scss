@@ -17,6 +17,8 @@ img {
     margin: 20px 0;
     background-image: url('../img/wave-line.svg');
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
     width: 120px;
     height: 28px;
   }
@@ -87,6 +89,8 @@ img {
 @import 'parts/content';
 
 @import "parts/section-brand";
+
+@import "parts/quote-section";
 
 @import "parts/section-chapters";
 

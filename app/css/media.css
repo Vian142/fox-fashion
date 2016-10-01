@@ -17,9 +17,12 @@
 
 @media screen and (max-width: 768px) {
   html {
-    font-size: 11px; }
+    font-size: 12px; }
   .btn {
-    padding: 4px 9px; }
+    padding: 10px 8px; }
+  .wave-line:after {
+    width: 90px;
+    height: 20px; }
   .top-bar__wrapper {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -110,13 +113,13 @@
     letter-spacing: 9px; }
   .main-chapter__main-title {
     font-size: 46px;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); }
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.4); }
   .main-chapter__title-descr {
     font-size: 33px;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); }
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.4); }
   .main-chapter .main-chapter__chapter-number {
     font-size: 18px;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); }
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.4); }
   /* section brand */
   .brand-list {
     -webkit-box-pack: center;
@@ -151,7 +154,12 @@
 /**/
 @media screen and (max-width: 480px) {
   html {
-    font-size: 10px; }
+    font-size: 11px; }
+  .btn {
+    padding: 6px 6px; }
+  .wave-line:after {
+    width: 80px;
+    height: 16px; }
   .form-search {
     width: 210px; }
   .authorization-block {
@@ -222,4 +230,34 @@
       font-size: 22px; }
     .chapter-content__text {
       font-size: 12px;
-      text-align: left; } }
+      text-align: left; }
+  .article-list__item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 45%;
+        -ms-flex: 1 1 45%;
+            flex: 1 1 45%; }
+  .form-newsletter__block-form__input {
+    width: 230px; }
+  .social-block__list {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .main-header__content__title-main {
+    font-size: 32px;
+    letter-spacing: 10px; }
+  .main-header__content__title-descr {
+    font-size: 18px; } }
+
+@media screen and (max-width: 360px) {
+  .article-list {
+    padding: 0 2%; }
+    .article-list__item {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 100%;
+          -ms-flex: 1 1 100%;
+              flex: 1 1 100%; } }
