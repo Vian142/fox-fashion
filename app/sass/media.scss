@@ -1,20 +1,135 @@
-@media screen and (max-width: 1920px ){
-  html{
+@media screen and (max-width: 1920px) {
+  html {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 992px){
-  html{
+
+@media screen and (max-width: 992px) {
+  html {
     font-size: 13px;
   }
-}
-@media screen and (max-width: 768px){
-  html{
-    font-size: 11px;
+  .btn {
+    padding: 8px 16px;
   }
 }
-@media screen and (max-width: 480px){
-  html{
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 11px;
+  }
+  .btn {
+    padding: 4px 9px;
+  }
+  .top-bar__wrapper {
+    justify-content: center;
+  }
+
+  /* main-menu */
+  .menu-trigger {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 12px;
+    z-index: 150;
+  }
+  .main-menu {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 100;
+    &--view {
+      display: block;
+    }
+    &__list {
+      position: absolute;
+      padding: 0;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: translate(0, -50%);
+      &__item {
+        width: 100%;
+        &__link {
+          display: block;
+          text-align: center;
+          padding: 10px 0;
+          &:hover {
+            background: #000;
+          }
+        }
+      }
+    }
+  }
+  /**/
+
+  /* bottom-line header*/
+  .main-header__bottom-line {
+    &__wrapper {
+      flex-direction: column;
+      align-content: center;
+    }
+  }
+
+  /* tech section columns*/
+  .tech-columns {
+    flex-wrap: wrap;
+    &__item {
+      flex: 1 1 25%;
+      &__icon-block {
+        width: 50px;
+        height: 80px;
+      }
+    }
+  }
+
+  .section-content__content-wrap {
+    .title-level-1 {
+      font-size: 16px;
+    }
+    .title-level-2 {
+      font-size: 16px;
+    }
+    .title-chapter {
+      font-size: 16px;
+    }
+  }
+
+}
+
+/**/
+@media screen and (max-width: 480px) {
+  html {
     font-size: 10px;
+  }
+
+  .form-search {
+    width: 210px;
+  }
+
+  .authorization-block {
+    padding: 0 5px 0 0;
+  }
+  .language-block {
+    padding: 0 5px;
+  }
+  .basket-block {
+    padding: 0 0 0 5px;
+  }
+
+  /* tech section columns*/
+  .tech-columns {
+    flex-wrap: wrap;
+    justify-content: center;
+    &__item {
+      flex: 1 1 50%;
+      &__icon-block {
+        width: 45px;
+        height: 70px;
+      }
+    }
   }
 }

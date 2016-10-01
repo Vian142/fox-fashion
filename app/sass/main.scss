@@ -5,9 +5,13 @@ img {
   width: 100%;
 }
 
+/*.main-wrapper{
+  max-width: 1920px;
+  margin: 0 auto;
+}*/
 
-.wave-line{
-  &:after{
+.wave-line {
+  &:after {
     content: '';
     display: block;
     margin: 20px 0;
@@ -17,18 +21,60 @@ img {
     height: 28px;
   }
 }
-.center-line{
-  &:after{
+
+.center-line {
+  &:after {
     margin-left: auto;
     margin-right: auto;
   }
 }
-.interim-block{
+.interim-block {
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
-/* top header */
+
+/* кнопки */
+.btn {
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 2;
+  text-align: center;
+  display: inline-block;
+  padding: 13px 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid rgb(232, 233, 239);
+  transition: all 0.3s ease;
+}
+/* белая кнопка*/
+.btn-white{
+  border: 2px solid rgb(232, 233, 239);
+  color: rgb(255, 255, 255);
+  &:focus,
+  &:hover{
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+  }
+}
+/* черная кнопка */
+.btn-black{
+  background-color: rgb(32, 33, 33);
+  border: 2px solid rgb(32, 33, 33);
+  color: rgb(255, 255, 255);
+  &:focus,
+  &:hover{
+    cursor: pointer;
+    background: #fff;
+    color: rgb(32, 33, 33);
+  }
+}
+
+
+/* top bar */
 @import 'parts/top-bar';
 
 /* main-header */
@@ -42,15 +88,9 @@ img {
 
 @import "parts/section-brand";
 
-
-@import "parts/section-middle";
-@import "parts/section-bottom";
-
+@import "parts/section-chapters";
 
 @import "parts/news-article";
 
 /* main footer */
-@import 'parts/footer'
-
-
-;
+@import 'parts/footer';

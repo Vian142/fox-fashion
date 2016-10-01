@@ -1,12 +1,117 @@
-.main-header{
+.main-header {
   min-height: 100vh;
   background-image: url('../img/image/slide-1.jpg');
   background-size: cover;
   background-position: 0 0;
+
+  display: flex;
+  flex-direction: column;
+
 }
 
+.main-header__top-line {
+  margin: 5% 0 0 0;
+  padding: 0 2%;
+}
 
-.main-header__bottom-line{
-  height: 60px;
-  background-color: rgba(0,0,0, 0.3);
+.logo-block {
+  padding: 10px 0;
+  max-width: 180px;
+  &__link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-size: 36px;
+    font-family: "Lato", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    text-decoration: none;
+    &__text {
+      padding: 0 5px;
+      display: block;
+    }
+    &__image {
+      width: 55px;
+      height: 45px;
+    }
+  }
+}
+
+/* main menu */
+
+.menu-trigger {
+  display: none;
+  height: 35px;
+  width: 35px;
+  text-decoration: none;
+  background: #2a2a2a;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 0 3px 0 rgba(255,255,255, 0.5);
+  &__icon {
+    line-height: 35px;
+    font-size: 30px;
+  }
+}
+
+.main-menu {
+
+  &__list {
+    padding: 0;
+    &__item {
+      list-style: none;
+      padding: 5px 0;
+      &__link {
+        font-size: 16px;
+        font-family: "Montserrat", sans-serif;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 2;
+        transition: all 0.2s ease;
+        &:focus,
+        &:hover {
+          text-decoration: underline;
+          color: rgb(255, 255, 255);;
+        }
+      }
+    }
+  }
+}
+
+/*media*/
+@media screen and (max-width: 768px) {
+
+}
+
+/**/
+.main-header__bottom-line {
+  height: 100px;
+  margin: auto 0 0 0;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  &__wrapper {
+    height: 100%;
+    max-width: 960px;
+    padding: 5px 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__content {
+    font-size: 1.14rem;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+  }
 }

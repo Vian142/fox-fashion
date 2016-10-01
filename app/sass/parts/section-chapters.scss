@@ -1,0 +1,84 @@
+.section-chapter3 {
+  min-height: 100vh;
+  background-color: #eff0f2;
+  background: url('../img/section/photo2.png'), linear-gradient(to right, #eff0f2 0%, #eff0f2 100%);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+  display: flex;
+}
+
+.chapter-content {
+  max-width: 450px;
+  /* белый цвет блока */
+  &--white{
+    color: rgb(255, 255, 255);
+    .chapter-content__text{
+      color: rgb(255, 255, 255);
+    }
+  }
+  /* темный цвет блока */
+  &--black{
+    color: rgb(32, 33, 33);
+    .chapter-content__text{
+      color: rgb(132, 132, 132);
+    }
+  }
+  /* Заголовок */
+  &__title {
+    font-size: 72px;
+    font-family: "FuturaPT", sans-serif;
+    color: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: left;
+  }
+  /* chapter */
+  &__chapter-block {
+    font-size: 32px;
+    font-family: "Merriweather", sans-serif;
+    color: inherit;
+    font-weight: bold;
+    line-height: 1;
+    text-align: left;
+  }
+  /* content text */
+  &__text {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(132, 132, 132);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.143;
+    text-align: left;
+  }
+  &__btn-wrap {
+    padding: 10px 0 5px;
+  }
+}
+
+
+
+/* Позиционирование блоков */
+/* Вправо*/
+.chapter-right {
+  margin: auto 25% auto auto;
+}
+/* Влево */
+.chapter-left {
+  margin: auto auto auto 25%;
+}
+
+/*-----------------------------*/
+/* 2 block chapters*/
+
+.section-chapter-middle {
+  min-height: 100vh;
+  background: url('../img/triangle-right-compressor.png') no-repeat right,
+  url('../img/section/photo1.jpg') no-repeat 0 0;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  display: flex;
+}

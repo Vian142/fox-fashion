@@ -19,423 +19,444 @@
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
+<div class="main-wrapper">
 
-<div class="top-bar">
-    <div class="top-bar__wrapper">
-        <div class="search-block">
-            <form action="" class="form-search">
-                <input type="text" class="form-search__search-input" placeholder="Search now">
-                <button class="form-search__search-btn">
-                    <span aria-hidden="true" class="icon_search"></span>
-                </button>
+    <div class="top-bar">
+        <div class="top-bar__wrapper">
+            <div class="search-block">
+                <form action="" class="form-search">
+                    <input type="text" class="form-search__search-input" placeholder="Search now">
+                    <button class="form-search__search-btn">
+                        <span aria-hidden="true" class="icon_search"></span>
+                    </button>
+                </form>
+            </div>
+
+
+            <div class="top-bar__control">
+                <div class="authorization-block">
+                    <span class="icon_group authorization-block__icon"></span>
+                    <a href="#" id="link-login" class="authorization-block__link">Login</a> /
+                    <a href="#" id="link-register" class="authorization-block__link">Register</a>
+                </div>
+
+                <div class="language-block">
+                    <div class="language-block__view">
+                        <img src="img/icons/british-flag.png" class="language-block__view__image" alt="">
+                        <button class="language-block__view__value">
+                            ENG
+                            <span class="arrow_carrot-down"></span>
+                        </button>
+                    </div>
+                    <ul class="language-block__list">
+                        <li class="language-block__list__item">ENG</li>
+                        <li class="language-block__list__item">RUS</li>
+                        <li class="language-block__list__item">FR</li>
+                    </ul>
+                </div>
+
+                <div class="basket-block">
+                    <div class="basket-block__view">
+                        <span class="basket-block__view__icon icon_cart_alt"></span>
+                        <button class="basket-block__view__value">
+                            2 items
+                            <span class="arrow_carrot-down"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="main-header__top-line">
+            <div class="logo-block">
+                <a href="#" class="logo-block__link">
+                    <img src="img/logo.svg" alt="Logotype" class="logo-block__link__image">
+                    <span class="logo-block__link__text">the<b>fox</b></span>
+                </a>
+            </div>
+
+
+            <div class="menu-btn-wrap">
+                <a class="menu-trigger" href="#" onclick="event.preventDefault()">
+                    <span class="icon_menu menu-trigger__icon"></span>
+                </a>
+            </div>
+
+            <nav class="main-menu">
+                <ul class="main-menu__list">
+                    <li class="main-menu__list__item">
+                        <a href="#" class="main-menu__list__item__link">new in</a>
+                    </li>
+                    <li class="main-menu__list__item">
+                        <a href="#" class="main-menu__list__item__link">woman</a>
+                    </li>
+                    <li class="main-menu__list__item">
+                        <a href="#" class="main-menu__list__item__link">trf</a>
+                    </li>
+                    <li class="main-menu__list__item">
+                        <a href="#" class="main-menu__list__item__link">man</a>
+                    </li>
+                    <li class="main-menu__list__item">
+                        <a href="#" class="main-menu__list__item__link">kids</a>
+                    </li>
+                    <li class="main-menu__list__item">
+                        <a href="#" class="main-menu__list__item__link">editorial</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-header__bottom-line">
+            <div class="main-header__bottom-line__wrapper">
+                <div class="main-header__bottom-line__content">
+                    Get thefox SPECIAL today, this will save many time for your project.
+                </div>
+                <div class="main-header__bottom-line__btn-wrap">
+                    <a href="#" class="btn btn-white">Download Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="section-tech">
+        <div class="tech-columns">
+            <div class="tech-columns__item">
+                <div class="tech-columns__item__icon-block">
+                    <img src="img/icons/icon-tech1.svg" alt="">
+                </div>
+                <div class="tech-columns__item__title">Look awesome</div>
+                <div class="tech-columns__item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nihil?
+                </div>
+            </div>
+            <div class="tech-columns__item">
+                <div class="tech-columns__item__icon-block">
+                    <img src="img/icons/icon-tech2.svg" alt="">
+                </div>
+                <div class="tech-columns__item__title">Great design</div>
+                <div class="tech-columns__item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quidem?
+                </div>
+            </div>
+            <div class="tech-columns__item">
+                <div class="tech-columns__item__icon-block">
+                    <img src="img/icons/icon-tech1.svg" alt="">
+                </div>
+                <div class="tech-columns__item__title">Good freebie</div>
+                <div class="tech-columns__item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Ad!
+                </div>
+            </div>
+            <div class="tech-columns__item">
+                <div class="tech-columns__item__icon-block">
+                    <img src="img/icons/icon-tech2.svg" alt="">
+                </div>
+                <div class="tech-columns__item__title">Flexibility</div>
+                <div class="tech-columns__item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Id!
+                </div>
+            </div>
+    </section>
+
+    <section class="section-chapter chapter-1">
+        <div class="section-content">
+            <div class="section-content__left">
+                <div class="section-image__img-wrap">
+                    <img class="section-image__img-wrap__img" src="img/image/image1.png" alt="">
+                </div>
+            </div>
+            <div class="section-content__right">
+                <div class="section-image__img-wrap img-wrap-right">
+                    <img class="section-image__img-wrap__img" src="img/image/image2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="section-content__content-wrap">
+            <div class="content-title title-level-1">spring</div>
+            <div class="content-title title-level-2">summer</div>
+            <div class="content-title title-chapter">/ Chapter 1.</div>
+        </div>
+    </section>
+
+    <div class="wave-line center-line interim-block"></div>
+    <section class="section-brand">
+        <div class="brand-list">
+            <div class="brand-list__item">
+                <div class="brand-list__item__image-wrap">
+                    <img src="img/brand/brand-1.svg" alt="Brand" class="brand-list__item__image-wrap__img-brand">
+                </div>
+            </div>
+            <div class="brand-list__item">
+                <div class="brand-list__item__image-wrap">
+                    <img src="img/brand/brand-2.svg" alt="Brand" class="brand-list__item__image-wrap__img-brand">
+                </div>
+            </div>
+            <div class="brand-list__item">
+                <div class="brand-list__item__image-wrap">
+                    <img src="img/brand/brand-3.svg" alt="Brand" class="brand-list__item__image-wrap__img-brand">
+                </div>
+            </div>
+            <div class="brand-list__item">
+                <div class="brand-list__item__image-wrap">
+                    <img src="img/brand/brand-4.svg" alt="Brand" class="brand-list__item__image-wrap__img-brand">
+                </div>
+            </div>
+            <div class="brand-list__item">
+                <div class="brand-list__item__image-wrap">
+                    <img src="img/brand/brand-5.svg" alt="Brand" class="brand-list__item__image-wrap__img-brand">
+                </div>
+            </div>
+            <div class="brand-list__item">
+                <div class="brand-list__item__image-wrap">
+                    <img src="img/brand/brand-6.svg" alt="Brand" class="brand-list__item__image-wrap__img-brand">
+                </div>
+            </div>
+            <div class="brand-list__item">
+                <div class="brand-list__item__image-wrap">
+                    <img src="img/brand/brand-7.svg" alt="Brand" class="brand-list__item__image-wrap__img-brand">
+                </div>
+            </div>
+            <div class="brand-list__item">
+                <div class="brand-list__item__image-wrap">
+                    <img src="img/brand/brand-8.svg" alt="Brand" class="brand-list__item__image-wrap__img-brand">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="section-quote">
+        <div class="quote-container">
+            <div class="quote-container__item">
+                <div class="quote-container__item__quote-text">
+                    Lorem ipsum dolor sit amet, Nemo, quisquam? consectetur adipisicing elit.
+                </div>
+                <div class="quote__author">John Dow</div>
+            </div>
+            <div class="quote-container__item">
+                <div class="quote-container__item__quote-text">
+                    Lorem ipsum dolor sit adipisicing elit. Tempora, amet, consectetur vitae?
+                </div>
+                <div class="quote__author">John Dow</div>
+            </div>
+            <div class="quote-container__item">
+                <div class="quote-container__item__quote-text">
+                    amet, adipisicing Lorem ipsum dolor sit elit. Quos, voluptas onsectetur?
+                </div>
+                <div class="quote__author">John Dow</div>
+            </div>
+            <div class="quote-container__item">
+                <div class="quote-container__item__quote-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, iusto.
+                </div>
+                <div class="quote__author">John Dow</div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-chapter-middle">
+        <div class="chapter-content chapter-content--white chapter-right">
+            <div class="chapter-content__title">Summer.</div>
+            <div class="chapter-content__chapter-block">Chapter 2.</div>
+            <div class="wave-line"></div>
+            <div class="chapter-content__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur doloremque eaque
+                eligendi
+                est fugiat illo laborum, molestiae molestias officia quidem quo quod reiciendis sed tempore temporibus
+                tenetur voluptatem voluptatibus?
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-news">
+        <div class="news-container">
+            <div class="news-container__main-title">
+                <div class="news-container__main-title__title">The news</div>
+                <div class="news-container__main-title__title-descr">The simple article</div>
+            </div>
+            <div class="news-container__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet commodi dignissimos id ipsa molestias,
+                veniam veritatis vero. A, deserunt doloribus eligendi esse est maiores nulla officia perferendis quod
+                vero!
+            </div>
+        </div>
+
+        <div class="wave-line center-line"></div>
+
+        <div class="article-list">
+            <div class="article-list__item">
+                <div class="article-list__item__thubnail-block">
+                    <a href="#" class="article-list__item__thubnail-block__link">
+                        <img src="img/article/article-thumb-1.jpg" alt=""
+                             class="article-list__item__thubnail-block__link__image">
+                    <span class="article-list__item__thubnail-block__link__view-text">
+                        view full text
+                    </span>
+                    </a>
+                </div>
+                <div class="article-list__item__category">trending</div>
+                <div class="article-list__item__title-article">Standart</div>
+                <div class="article-list__item__content-article">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus. Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Deserunt fugit illum iure nam similique vel.
+                </div>
+            </div>
+
+            <div class="article-list__item">
+                <div class="article-list__item__thubnail-block">
+                    <a href="#" class="article-list__item__thubnail-block__link">
+                        <img src="img/article/article-thumb-2.jpg" alt=""
+                             class="article-list__item__thubnail-block__link__image">
+                    <span class="article-list__item__thubnail-block__link__view-text">
+                        view full text
+                    </span>
+                    </a>
+                </div>
+                <div class="article-list__item__category">trending</div>
+                <div class="article-list__item__title-article">Macintosh news</div>
+                <div class="article-list__item__content-article">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos? Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Doloremque eaque eum laborum minus possimus? Itaque?
+                </div>
+            </div>
+
+            <div class="article-list__item">
+                <div class="article-list__item__thubnail-block">
+                    <a href="#" class="article-list__item__thubnail-block__link">
+                        <img src="img/article/article-thumb-3.jpg" alt=""
+                             class="article-list__item__thubnail-block__link__image">
+                    <span class="article-list__item__thubnail-block__link__view-text">
+                        view full text
+                    </span>
+                    </a>
+                </div>
+                <div class="article-list__item__category">machine</div>
+                <div class="article-list__item__title-article">Where are you?</div>
+                <div class="article-list__item__content-article">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa! Lorem ipsum dolor sit amet,
+                    consectetur
+                    adipisicing elit. Atque dicta, labore nam nihil perferendis sapiente!
+                </div>
+            </div>
+
+            <div class="article-list__item">
+                <div class="article-list__item__thubnail-block">
+                    <a href="#" class="article-list__item__thubnail-block__link">
+                        <img src="img/article/article-thumb-4.jpg" alt=""
+                             class="article-list__item__thubnail-block__link__image">
+                    <span class="article-list__item__thubnail-block__link__view-text">
+                        view full text
+                    </span>
+                    </a>
+                </div>
+                <div class="article-list__item__category">machine</div>
+                <div class="article-list__item__title-article">Where are you?</div>
+                <div class="article-list__item__content-article">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa! Lorem ipsum dolor sit amet,
+                    consectetur
+                    adipisicing elit. Adipisci architecto distinctio exercitationem, nihil perferendis sunt.
+                </div>
+            </div>
+
+            <div class="article-list__item">
+                <div class="article-list__item__thubnail-block">
+                    <a href="#" class="article-list__item__thubnail-block__link">
+                        <img src="img/article/article-thumb-5.jpg" alt=""
+                             class="article-list__item__thubnail-block__link__image">
+                    <span class="article-list__item__thubnail-block__link__view-text">
+                        view full text
+                    </span>
+                    </a>
+                </div>
+                <div class="article-list__item__category">machine</div>
+                <div class="article-list__item__title-article">Where are you?</div>
+                <div class="article-list__item__content-article">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa! Lorem ipsum dolor sit amet,
+                    consectetur
+                    adipisicing elit. Aliquam, amet beatae consectetur necessitatibus sapiente voluptas.
+                </div>
+            </div>
+
+            <div class="article-list__item">
+                <div class="article-list__item__thubnail-block">
+                    <a href="#" class="article-list__item__thubnail-block__link">
+                        <img src="img/article/article-thumb-6.jpg" alt=""
+                             class="article-list__item__thubnail-block__link__image">
+                    <span class="article-list__item__thubnail-block__link__view-text">
+                        view full text
+                    </span>
+                    </a>
+                </div>
+                <div class="article-list__item__category">machine</div>
+                <div class="article-list__item__title-article">Where are you?</div>
+                <div class="article-list__item__content-article">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa! Lorem ipsum dolor sit amet,
+                    consectetur
+                    adipisicing elit. Deserunt dolorum et eum nihil soluta ut.
+                </div>
+            </div>
+        </div>
+
+        <div class="news__btn-wrap">
+            <a href="" class="btn btn-article-more">View all articles</a>
+        </div>
+
+    </section>
+
+    <section class="section-chapter3">
+        <div class="chapter-content chapters-content--black chapter-left">
+            <div class="chapter-content__title">Summer.</div>
+            <div class="chapter-content__chapter-block">Chapter 2.</div>
+            <div class="wave-line"></div>
+            <div class="chapter-content__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur doloremque eaque
+                eligendi
+                est fugiat illo laborum, molestiae molestias officia quidem quo quod reiciendis sed tempore temporibus
+                tenetur voluptatem voluptatibus?
+            </div>
+            <div class="chapters-bottom__btn-wrap">
+                <a href="#" class="btn btn-black">
+                    Check our style
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="main-footer">
+        <div class="newsletter-block">
+            <form action="" class="form-newsletter">
+                <div class="form-newsletter__title">Sign Up Thefox Newsletter</div>
+                <div class="form-newsletter__block-form">
+                    <input type="text" class="form-newsletter__block-form__input" placeholder="Enter your email here">
+                </div>
             </form>
         </div>
-
-
-        <div class="top-bar__control">
-
-            <div class="authorization-block">
-                <span class="icon_group authorization-block__icon"></span>
-                <a href="#" id="link-login" class="authorization-block__link">Login</a> /
-                <a href="#" id="link-register" class="authorization-block__link">Register</a>
-            </div>
-
-            <div class="language-block">
-                <div class="language-block__view">
-                    <img src="img/icons/british-flag.png" class="language-block__view__image" alt="">
-                    <button class="language-block__view__value">
-                        ENG
-                        <span class="arrow_carrot-down"></span>
-                    </button>
-                </div>
-                <ul class="language-block__list">
-                    <li class="language-block__list__item">ENG</li>
-                    <li class="language-block__list__item">RUS</li>
-                    <li class="language-block__list__item">FR</li>
-                </ul>
-            </div>
-            <div class="basket-block">
-                <span class="basket-block__icon icon_cart_alt"></span>
-                <div class="basket-block__view">2 items</div>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<header class="main-header">
-    <div class="main-header__top-line">
-        <div class="logo-block">
-            <a href="#" class="logo-block__link">
-                <img src="" alt="Logotype" class="logo-block__link__image">
-            </a>
-        </div>
-
-        <nav class="main-menu">
-            <ul class="main-menu__list">
-                <li class="main-menu__list__item">
-                    <a href="#" class="main-menu__list__item__link">new in</a>
+        <div class="social-block">
+            <ul class="social-block__list">
+                <li class="social-block__list__item">
+                    <a href="#" class="social-block__list__item__link">
+                        instagram
+                    </a>
                 </li>
-                <li class="main-menu__list__item">
-                    <a href="#" class="main-menu__list__item__link">woman</a>
+                <li class="social-block__list__item">
+                    <a href="#" class="social-block__list__item__link">
+                        facebook
+                    </a>
                 </li>
-                <li class="main-menu__list__item">
-                    <a href="#" class="main-menu__list__item__link">trf</a>
-                </li>
-                <li class="main-menu__list__item">
-                    <a href="#" class="main-menu__list__item__link">man</a>
-                </li>
-                <li class="main-menu__list__item">
-                    <a href="#" class="main-menu__list__item__link">kids</a>
-                </li>
-                <li class="main-menu__list__item">
-                    <a href="#" class="main-menu__list__item__link">editorial</a>
+                <li class="social-block__list__item">
+                    <a href="#" class="social-block__list__item__link">
+                        twitter
+                    </a>
                 </li>
             </ul>
-        </nav>
-    </div>
-    <div class="main-header__bottom-line">
-        <div class="main-header__bottom-line__content">
-            Get thefox SPECIAL today, this will save many time for your project.
-            <a href="#" class="btn btn-white">Download Now</a>
         </div>
-    </div>
-</header>
+    </footer>
 
-
-<section class="section-tech">
-    <div class="tech-columns">
-        <div class="tech-columns__item">
-            <div class="tech-columns__item__icon-block">
-                <img src="img/icons/icon-tech1.svg" alt="">
-            </div>
-            <div class="tech-columns__item__title">Look awesome</div>
-            <div class="tech-columns__item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Nihil?
-            </div>
-        </div>
-        <div class="tech-columns__item">
-            <div class="tech-columns__item__icon-block">
-                <img src="img/icons/icon-tech2.svg" alt="">
-            </div>
-            <div class="tech-columns__item__title">Great design</div>
-            <div class="tech-columns__item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Quidem?
-            </div>
-        </div>
-        <div class="tech-columns__item">
-            <div class="tech-columns__item__icon-block">
-                <img src="img/icons/icon-tech1.svg" alt="">
-            </div>
-            <div class="tech-columns__item__title">Good freebie</div>
-            <div class="tech-columns__item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad!
-            </div>
-        </div>
-        <div class="tech-columns__item">
-            <div class="tech-columns__item__icon-block">
-                <img src="img/icons/icon-tech2.svg" alt="">
-            </div>
-            <div class="tech-columns__item__title">Flexibility</div>
-            <div class="tech-columns__item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id!
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section-chapter chapter-1">
-    <div class="section-content">
-        <div class="section-content__left">
-            <div class="section-image__img-wrap">
-                <img class="section-image__img-wrap__img" src="img/image/image1.png" alt="">
-            </div>
-        </div>
-
-        <div class="section-content__right">
-            <div class="section-image__img-wrap img-wrap-right">
-                <img class="section-image__img-wrap__img" src="img/image/image2.png" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="section-content__content-wrap">
-        <div class="content-title title-level-1">spring</div>
-        <div class="content-title title-level-2">summer</div>
-        <div class="content-title title-chapter">/ Chapter 1.</div>
-    </div>
-</section>
-
-<div class="wave-line center-line interim-block"></div>
-
-<section class="section-brand">
-    <div class="brand-list">
-        <div class="brand-list__item">
-            <div class="brand-list__item__image-wrap">
-                <img src="img/brand/brand-1.svg" alt="Brand" class="brand-list__item__image-wrap__img-brand">
-            </div>
-        </div>
-        <div class="brand-list__item">
-            <div class="brand-list__item__image-wrap">
-                <img src="img/brand/brand-2.svg" alt="Brand" class="brand-list__item__image-wrap__img-brand">
-            </div>
-        </div>
-        <div class="brand-list__item">
-            <div class="brand-list__item__image-wrap">
-                <img src="img/brand/brand-3.svg" alt="Brand" class="brand-list__item__image-wrap__img-brand">
-            </div>
-        </div>
-        <div class="brand-list__item">
-            <div class="brand-list__item__image-wrap">
-                <img src="img/brand/brand-4.svg" alt="Brand" class="brand-list__item__image-wrap__img-brand">
-            </div>
-        </div>
-        <div class="brand-list__item">
-            <div class="brand-list__item__image-wrap">
-                <img src="img/brand/brand-5.svg" alt="Brand" class="brand-list__item__image-wrap__img-brand">
-            </div>
-        </div>
-        <div class="brand-list__item">
-            <div class="brand-list__item__image-wrap">
-                <img src="img/brand/brand-6.svg" alt="Brand" class="brand-list__item__image-wrap__img-brand">
-            </div>
-        </div>
-        <div class="brand-list__item">
-            <div class="brand-list__item__image-wrap">
-                <img src="img/brand/brand-7.svg" alt="Brand" class="brand-list__item__image-wrap__img-brand">
-            </div>
-        </div>
-        <div class="brand-list__item">
-            <div class="brand-list__item__image-wrap">
-                <img src="img/brand/brand-8.svg" alt="Brand" class="brand-list__item__image-wrap__img-brand">
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section class="section-quote">
-    <div class="quote-container">
-        <div class="quote-container__item">
-            <div class="quote-container__item__quote-text">
-                Lorem ipsum dolor sit amet, Nemo, quisquam? consectetur adipisicing elit.
-            </div>
-            <div class="quote__author">John Dow</div>
-        </div>
-        <div class="quote-container__item">
-            <div class="quote-container__item__quote-text">
-                Lorem ipsum dolor sit adipisicing elit. Tempora, amet, consectetur vitae?
-            </div>
-            <div class="quote__author">John Dow</div>
-        </div>
-        <div class="quote-container__item">
-            <div class="quote-container__item__quote-text">
-                amet, adipisicing Lorem ipsum dolor sit elit. Quos, voluptas onsectetur?
-            </div>
-            <div class="quote__author">John Dow</div>
-        </div>
-        <div class="quote-container__item">
-            <div class="quote-container__item__quote-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, iusto.
-            </div>
-            <div class="quote__author">John Dow</div>
-        </div>
-    </div>
-</section>
-
-
-
-<section class="section-chapter-middle">
-    <div class="chapters-middle chapter-right">
-        <div class="chapters-middle__title">Summer.</div>
-        <div class="chapters-middle__chapter-block">Chapter 2.</div>
-<div class="wave-line"></div>
-        <div class="chapters-middle__text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur doloremque eaque eligendi
-            est fugiat illo laborum, molestiae molestias officia quidem quo quod reiciendis sed tempore temporibus
-            tenetur voluptatem voluptatibus?
-        </div>
-    </div>
-</section>
-
-
-
-<section class="section-news">
-    <div class="news-container">
-        <div class="news-container__main-title">
-            <div class="news-container__main-title__title">The news</div>
-            <div class="news-container__main-title__title-descr">The simple article</div>
-        </div>
-        <div class="news-container__description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet commodi dignissimos id ipsa molestias,
-            veniam veritatis vero. A, deserunt doloribus eligendi esse est maiores nulla officia perferendis quod vero!
-        </div>
-    </div>
-
-    <div class="wave-line center-line"></div>
-
-    <div class="article-list">
-        <div class="article-list__item">
-            <div class="article-list__item__thubnail-block">
-                <a href="#" class="article-list__item__thubnail-block__link">
-                    <img src="img/article/article-thumb-1.jpg" alt=""
-                         class="article-list__item__thubnail-block__link__image">
-                    <span class="article-list__item__thubnail-block__link__view-text">
-                        view full text
-                    </span>
-                </a>
-            </div>
-            <div class="article-list__item__category">trending</div>
-            <div class="article-list__item__title-article">Standart</div>
-            <div class="article-list__item__content-article">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus. Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Deserunt fugit illum iure nam similique vel.
-            </div>
-        </div>
-
-        <div class="article-list__item">
-            <div class="article-list__item__thubnail-block">
-                <a href="#" class="article-list__item__thubnail-block__link">
-                    <img src="img/article/article-thumb-2.jpg" alt=""
-                         class="article-list__item__thubnail-block__link__image">
-                    <span class="article-list__item__thubnail-block__link__view-text">
-                        view full text
-                    </span>
-                </a>
-            </div>
-            <div class="article-list__item__category">trending</div>
-            <div class="article-list__item__title-article">Macintosh news</div>
-            <div class="article-list__item__content-article">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos? Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Doloremque eaque eum laborum minus possimus? Itaque?
-            </div>
-        </div>
-
-        <div class="article-list__item">
-            <div class="article-list__item__thubnail-block">
-                <a href="#" class="article-list__item__thubnail-block__link">
-                    <img src="img/article/article-thumb-3.jpg" alt=""
-                         class="article-list__item__thubnail-block__link__image">
-                    <span class="article-list__item__thubnail-block__link__view-text">
-                        view full text
-                    </span>
-                </a>
-            </div>
-            <div class="article-list__item__category">machine</div>
-            <div class="article-list__item__title-article">Where are you?</div>
-            <div class="article-list__item__content-article">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa! Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Atque dicta, labore nam nihil perferendis sapiente!
-            </div>
-        </div>
-
-        <div class="article-list__item">
-            <div class="article-list__item__thubnail-block">
-                <a href="#" class="article-list__item__thubnail-block__link">
-                    <img src="img/article/article-thumb-4.jpg" alt=""
-                         class="article-list__item__thubnail-block__link__image">
-                    <span class="article-list__item__thubnail-block__link__view-text">
-                        view full text
-                    </span>
-                </a>
-            </div>
-            <div class="article-list__item__category">machine</div>
-            <div class="article-list__item__title-article">Where are you?</div>
-            <div class="article-list__item__content-article">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa! Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Adipisci architecto distinctio exercitationem, nihil perferendis sunt.
-            </div>
-        </div>
-
-        <div class="article-list__item">
-            <div class="article-list__item__thubnail-block">
-                <a href="#" class="article-list__item__thubnail-block__link">
-                    <img src="img/article/article-thumb-5.jpg" alt=""
-                         class="article-list__item__thubnail-block__link__image">
-                    <span class="article-list__item__thubnail-block__link__view-text">
-                        view full text
-                    </span>
-                </a>
-            </div>
-            <div class="article-list__item__category">machine</div>
-            <div class="article-list__item__title-article">Where are you?</div>
-            <div class="article-list__item__content-article">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa! Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Aliquam, amet beatae consectetur necessitatibus sapiente voluptas.
-            </div>
-        </div>
-
-        <div class="article-list__item">
-            <div class="article-list__item__thubnail-block">
-                <a href="#" class="article-list__item__thubnail-block__link">
-                    <img src="img/article/article-thumb-6.jpg" alt=""
-                         class="article-list__item__thubnail-block__link__image">
-                    <span class="article-list__item__thubnail-block__link__view-text">
-                        view full text
-                    </span>
-                </a>
-            </div>
-            <div class="article-list__item__category">machine</div>
-            <div class="article-list__item__title-article">Where are you?</div>
-            <div class="article-list__item__content-article">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa! Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Deserunt dolorum et eum nihil soluta ut.
-            </div>
-        </div>
-    </div>
-
-    <div class="news__btn-wrap">
-        <a href="" class="btn-article-more">View all articles</a>
-    </div>
-
-</section>
-
-
-<section class="section-chapter3">
-    <div class="chapters-bottom chapter-left">
-        <div class="chapters-bottom__title">Summer.</div>
-        <div class="chapters-bottom__chapter-block">Chapter 2.</div>
-        <div class="wave-line"></div>
-        <div class="chapters-bottom__text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur doloremque eaque eligendi
-            est fugiat illo laborum, molestiae molestias officia quidem quo quod reiciendis sed tempore temporibus
-            tenetur voluptatem voluptatibus?
-        </div>
-        <div class="chapters-bottom__btn-wrap">
-            <a href="#" class="chapter-btn">
-                Check our style
-            </a>
-        </div>
-    </div>
-</section>
-
-
-<footer class="main-footer">
-    <div class="newsletter-block">
-        <form action="" class="form-newsletter">
-            <div class="form-newsletter__title">Sign Up Thefox Newsletter</div>
-            <div class="form-newsletter__block-form">
-                <input type="text" class="form-newsletter__block-form__input" placeholder="Enter your email here">
-            </div>
-        </form>
-    </div>
-    <div class="social-block">
-        <ul class="social-block__list">
-            <li class="social-block__list__item">
-                <a href="#" class="social-block__list__item__link">
-                    instagram
-                </a>
-            </li>
-            <li class="social-block__list__item">
-                <a href="#" class="social-block__list__item__link">
-                    facebook
-                </a>
-            </li>
-            <li class="social-block__list__item">
-                <a href="#" class="social-block__list__item__link">
-                    twitter
-                </a>
-            </li>
-        </ul>
-    </div>
-</footer>
-
+</div>
 </body>
 </html>
