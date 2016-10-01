@@ -2,46 +2,48 @@ section {
   max-width: 1920px;
 }
 
-.section-chapter {
+.main-chapter {
   position: relative;
 }
 
-.section-content {
+.main-chapter__image-block {
   max-height: 980px;
-  overflow: hidden;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
   &__left {
     box-sizing: border-box;
-    padding: 0 5em 0 0;
-    flex: 0 0 35%;
-    margin-left: 50px;
+    background-color: rgb(212, 219, 226);
+
+    background: linear-gradient(to right, rgba(240,241,243,1) 0%,rgba(244,244,246, 0.1) 100%);
+
+    padding: 0 3% 0 3%;
+    flex: 0 0 32%;
+    margin-left: 5%;
+    overflow: hidden;
   }
   &__right {
     box-sizing: border-box;
+    background-color: rgb(212, 219, 226);
+
+    background: linear-gradient(to left, rgba(240,241,243,1) 0%,rgba(244,244,246, 0.1) 100%);
+
     flex: 0 0 50%;
-    margin-right: 50px;
+    margin-right: 5%;
+    overflow: hidden;
   }
 }
-.img-wrap-right {
-  padding: 0 5em;
-}
-.section-image__img-wrap {
-  background-color: rgb(212, 219, 226);
-  &__img {
-    max-width: 100%;
-    width: 100%;
+
+.main-chapter {
+  &__content-wrap {
+    position: absolute;
+    top: 20%;
+    left: 28%;
+    letter-spacing: 9px;
   }
-}
-.section-content__content-wrap {
-  position: absolute;
-  top: 20%;
-  left: 28%;
-  letter-spacing: 9px;
-  .title-level-1 {
-    font-size: 78px;
+  &__main-title {
+    font-size: 64px;
     font-family: "Merriweather", sans-serif;
     color: rgb(0, 0, 0);
     font-weight: bold;
@@ -51,8 +53,8 @@ section {
     padding-left: 0.5em;
     line-height: 1;
   }
-  .title-level-2 {
-    font-size: 62px;
+  &__title-descr {
+    font-size: 52px;
     font-family: "FuturaPT", sans-serif;
     color: rgb(32, 33, 33);
     padding-left: 1.5em;
@@ -61,8 +63,8 @@ section {
     text-transform: uppercase;
     line-height: 1;
   }
-  .title-chapter {
-    font-size: 26px;
+  .main-chapter__chapter-number {
+    font-size: 32px;
     font-family: "Merriweather", sans-serif;
     color: rgb(0, 0, 0);
     font-weight: bold;

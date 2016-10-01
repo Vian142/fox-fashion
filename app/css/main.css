@@ -1608,12 +1608,11 @@ img {
 section {
   max-width: 1920px; }
 
-.section-chapter {
+.main-chapter {
   position: relative; }
 
-.section-content {
+.main-chapter__image-block {
   max-height: 980px;
-  overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1629,66 +1628,70 @@ section {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  .section-content__left {
+  .main-chapter__image-block__left {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 0 5em 0 0;
+    background-color: #d4dbe2;
+    background: -webkit-gradient(linear, left top, right top, from(#f0f1f3), to(rgba(244, 244, 246, 0.1)));
+    background: -webkit-linear-gradient(left, #f0f1f3 0%, rgba(244, 244, 246, 0.1) 100%);
+    background: linear-gradient(to right, #f0f1f3 0%, rgba(244, 244, 246, 0.1) 100%);
+    padding: 0 3% 0 3%;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 35%;
-        -ms-flex: 0 0 35%;
-            flex: 0 0 35%;
-    margin-left: 50px; }
-  .section-content__right {
+    -webkit-flex: 0 0 32%;
+        -ms-flex: 0 0 32%;
+            flex: 0 0 32%;
+    margin-left: 5%;
+    overflow: hidden; }
+  .main-chapter__image-block__right {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    background-color: #d4dbe2;
+    background: -webkit-gradient(linear, right top, left top, from(#f0f1f3), to(rgba(244, 244, 246, 0.1)));
+    background: -webkit-linear-gradient(right, #f0f1f3 0%, rgba(244, 244, 246, 0.1) 100%);
+    background: linear-gradient(to left, #f0f1f3 0%, rgba(244, 244, 246, 0.1) 100%);
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 50%;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
-    margin-right: 50px; }
+    margin-right: 5%;
+    overflow: hidden; }
 
-.img-wrap-right {
-  padding: 0 5em; }
-
-.section-image__img-wrap {
-  background-color: #d4dbe2; }
-  .section-image__img-wrap__img {
-    max-width: 100%;
-    width: 100%; }
-
-.section-content__content-wrap {
+.main-chapter__content-wrap {
   position: absolute;
   top: 20%;
   left: 28%;
   letter-spacing: 9px; }
-  .section-content__content-wrap .title-level-1 {
-    font-size: 78px;
-    font-family: "Merriweather", sans-serif;
-    color: black;
-    font-weight: bold;
-    text-align: left;
-    text-transform: uppercase;
-    padding-right: 1em;
-    padding-left: 0.5em;
-    line-height: 1; }
-  .section-content__content-wrap .title-level-2 {
-    font-size: 62px;
-    font-family: "FuturaPT", sans-serif;
-    color: #202121;
-    padding-left: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 1; }
-  .section-content__content-wrap .title-chapter {
-    font-size: 26px;
-    font-family: "Merriweather", sans-serif;
-    color: black;
-    font-weight: bold;
-    line-height: 1;
-    text-align: right;
-    padding-left: 2.5em;
-    letter-spacing: 2px; }
+
+.main-chapter__main-title {
+  font-size: 64px;
+  font-family: "Merriweather", sans-serif;
+  color: black;
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+  padding-right: 1em;
+  padding-left: 0.5em;
+  line-height: 1; }
+
+.main-chapter__title-descr {
+  font-size: 52px;
+  font-family: "FuturaPT", sans-serif;
+  color: #202121;
+  padding-left: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1; }
+
+.main-chapter .main-chapter__chapter-number {
+  font-size: 32px;
+  font-family: "Merriweather", sans-serif;
+  color: black;
+  font-weight: bold;
+  line-height: 1;
+  text-align: right;
+  padding-left: 2.5em;
+  letter-spacing: 2px; }
 
 .section-brand {
   padding: 40px 0; }
@@ -1745,20 +1748,6 @@ section {
         -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease; }
 
-.section-chapter3 {
-  min-height: 100vh;
-  background-color: #eff0f2;
-  background: url("../img/section/photo2.png"), -webkit-gradient(linear, left top, right top, from(#eff0f2), to(#eff0f2));
-  background: url("../img/section/photo2.png"), -webkit-linear-gradient(left, #eff0f2 0%, #eff0f2 100%);
-  background: url("../img/section/photo2.png"), linear-gradient(to right, #eff0f2 0%, #eff0f2 100%);
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: contain;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-
 .chapter-content {
   max-width: 450px;
   /* белый цвет блока */
@@ -1767,11 +1756,13 @@ section {
   /* chapter */
   /* content text */ }
   .chapter-content--white {
-    color: white; }
+    color: white;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5); }
     .chapter-content--white .chapter-content__text {
       color: white; }
   .chapter-content--black {
-    color: #202121; }
+    color: #202121;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5); }
     .chapter-content--black .chapter-content__text {
       color: #848484; }
   .chapter-content__title {
@@ -1780,14 +1771,14 @@ section {
     color: inherit;
     font-weight: bold;
     text-transform: uppercase;
-    line-height: 1;
+    line-height: 1.5;
     text-align: left; }
   .chapter-content__chapter-block {
     font-size: 32px;
     font-family: "Merriweather", sans-serif;
     color: inherit;
     font-weight: bold;
-    line-height: 1;
+    line-height: 1.2;
     text-align: left; }
   .chapter-content__text {
     font-size: 14px;
@@ -1817,6 +1808,20 @@ section {
   background-position: top;
   background-size: cover;
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.section-chapter3 {
+  min-height: 100vh;
+  background-color: #eff0f2;
+  background: url("../img/section/photo2.png"), -webkit-gradient(linear, left top, right top, from(#eff0f2), to(#eff0f2));
+  background: url("../img/section/photo2.png"), -webkit-linear-gradient(left, #eff0f2 0%, #eff0f2 100%);
+  background: url("../img/section/photo2.png"), linear-gradient(to right, #eff0f2 0%, #eff0f2 100%);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

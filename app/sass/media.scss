@@ -11,6 +11,21 @@
   .btn {
     padding: 8px 16px;
   }
+
+  .main-chapter {
+    &__content-wrap {
+    }
+    &__main-title {
+      font-size: 56px;
+    }
+    &__title-descr {
+      font-size: 43px;
+    }
+    .main-chapter__chapter-number {
+      font-size: 28px;
+    }
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -86,16 +101,78 @@
     }
   }
 
-  .section-content__content-wrap {
-    .title-level-1 {
-      font-size: 16px;
+  /* section content*/
+  .main-chapter__image-block {
+    &__left {
+      flex: 1 1 35%;
+      padding: 0;
+      margin: 0;
     }
-    .title-level-2 {
-      font-size: 16px;
+    &__right {
+      flex: 1 1 50%;
+      padding: 0;
+      margin: 0;
     }
-    .title-chapter {
-      font-size: 16px;
+
+  }
+  .main-chapter {
+    &__content-wrap {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      //border: 1px solid black;
+      //background: rgba(255, 255, 255, 0.2);
+      padding: 5px 0;
+      letter-spacing: 9px;
     }
+    &__main-title {
+      font-size: 46px;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+    }
+    &__title-descr {
+      font-size: 33px;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+    }
+    .main-chapter__chapter-number {
+      font-size: 18px;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+    }
+  }
+
+  /* section brand */
+  .brand-list {
+    justify-content: center;
+    &__item {
+      flex: 1 1 45%;
+    }
+  }
+
+  .chapter-content {
+    padding: 0 2%;
+    /* Заголовок */
+    &__title {
+      font-size: 46px;
+    }
+    /* chapter */
+    &__chapter-block {
+      font-size: 24px;
+    }
+    /* content text */
+    &__text {
+      font-size: 13px;
+      text-align: left;
+    }
+  }
+
+  /* Позиционирование блоков */
+  /* Вправо*/
+  .chapter-right {
+    margin: auto;
+  }
+  /* Влево */
+  .chapter-left {
+    margin: auto;
   }
 
 }
@@ -109,7 +186,6 @@
   .form-search {
     width: 210px;
   }
-
   .authorization-block {
     padding: 0 5px 0 0;
   }
@@ -132,4 +208,64 @@
       }
     }
   }
+
+  /* section content */
+  .main-chapter {
+    &__content-wrap {
+      top: 50%;
+      letter-spacing: 3px;
+      text-align: center;
+    }
+    &__main-title {
+      font-size: 46px;
+      padding: 0;
+      text-align: center;
+    }
+    &__title-descr {
+      font-size: 33px;
+      padding: 0;
+      text-align: center;
+    }
+    .main-chapter__chapter-number {
+      font-size: 14px;
+      padding: 5px 0;
+      text-align: center;
+    }
+  }
+
+  /* section brand */
+  .brand-list {
+    justify-content: center;
+    &__item {
+      flex: 1 1 40%;
+      margin: 0.5em;
+    }
+  }
+
+  .chapter-content {
+    /* белый цвет блока */
+    &--white{
+      text-shadow: 1px 1px 0 rgba(0,0,0, 0.5);
+    }
+    /* темный цвет блока */
+    &--black{
+      text-shadow: 1px 1px 0 rgba(255,255,255, 0.5);
+    }
+    /* Заголовок */
+    &__title {
+      font-size: 36px;
+    }
+    /* chapter */
+    &__chapter-block {
+      font-size: 22px;
+    }
+    /* content text */
+    &__text {
+      font-size: 12px;
+      text-align: left;
+    }
+  }
+
+
+
 }
