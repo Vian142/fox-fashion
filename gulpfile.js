@@ -54,6 +54,7 @@ gulp.task('css-libs', function () {
 /*  сборка, сжатие и минификация скриптов   */
 gulp.task('scripts', function () {
     return gulp.src([ // Берем все необходимые библиотеки
+        'app/bower-libs/slick-carousel/slick/slick.js'
     ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())

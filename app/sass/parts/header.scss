@@ -1,5 +1,5 @@
 .main-header {
-  min-height: 480px;
+  min-height: 500px;
   height: 92vh;
   background-image: url('../img/image/slide-1.jpg');
   background-size: cover;
@@ -11,7 +11,7 @@
 }
 
 .main-header__top-line {
-  margin: 5% 0 0 0;
+  margin: 0;
   padding: 0 2%;
 }
 
@@ -65,7 +65,7 @@
       list-style: none;
       padding: 5px 0;
       &__link {
-        font-size: 16px;
+        font-size: 1.4rem;
         font-family: "Montserrat", sans-serif;
         color: rgb(255, 255, 255);
         font-weight: bold;
@@ -80,6 +80,9 @@
         }
       }
     }
+  }
+  &--active{
+    display: block!important;
   }
 }
 
