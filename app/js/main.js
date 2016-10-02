@@ -14,8 +14,7 @@
         event.preventDefault();
         $(mainMenu).toggleClass('main-menu--active');
     });
-    $(linkMenu).click(function (event) {
-        event.preventDefault();
+    $(linkMenu).click(function () {
         $(mainMenu).removeClass('main-menu--active');
     });
 })();
